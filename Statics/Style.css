@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.brandlogo {
+	font-size: 25px;
+	padding-left: 50px;
+}
+.sidenav {
+	margin-top: 50px;
+	height: 100%;
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 50px;
+}
+
+.sidenav a {
+	text-decoration: none;
+	font-size: 15px;
+	display: block;
+	padding: 10px 0 10px 5px;
+	color: #30a5ff;
+}
+
+.menulines {
+	visibility: hidden;
+}
+th,
+td {
+	width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+	.brandlogo {
+		padding-left: 35px;
+		font-size: 120%;
+	}
+	.menulines {
+		visibility: visible;
+		font-size: 30px;
+		cursor: pointer;
+		margin-right: 35px;
+	}
+	.sidenav {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		color: lightgray;
+		overflow-x: hidden;
+		transition: all 0.5s ease-out;
+	}
+	#ras {
+		visibility: visible;
+	}
+	.sidenav a {
+		text-decoration: none;
+		font-size: 17.5px;
+		display: block;
+		padding: 10px 0 10px 5px;
+		color: #30a5ff;
+	}
+	#form {
+		/*Add_item.php */
+		padding-right: 15% !important;
+		padding-top: 20% !important;
+	}
+	#ras {
+		/*Full_inventory.php */
+		padding-left: 5% !important;
+	}
+	#past {
+		/*Full_inventory.php */
+		padding-right: 5% !important;
+
+	}
+	#past{
+		visibility: visible;
+	}
+	.nav {
+		padding-top: 0%;
+	}
+}
